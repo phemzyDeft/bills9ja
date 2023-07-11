@@ -1,0 +1,27 @@
+
+.network .form-check input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+.network .form-check input[type="radio"]:checked {
+    border: solid 2px #401666;
+}
+.network .form-check input[type="radio"].mtn {
+    background: url(../images/subscription/airtime/mtn.png) no-repeat center;
+    background-size: cover;
+}
+
+.network .form-check input[type="radio"].airtel {
+    background: url(../images/subscription/airtime/airtel.png) no-repeat center;
+    background-size: cover;
+}
+
+.network .form-check input[type="radio"].glo {
+    background: url(../images/subscription/airtime/glo.png) no-repeat center;
+    background-size: cover;
+}
+
+.network .form-check input[type="radio"]._9mobile {
+    background: url(../images/subscription/airtime/9mobile.png) no-repeat center;
+    background-size: cover;
+}
