@@ -1,18 +1,20 @@
 import React from 'react'
 import {BsPhoneFlip} from "react-icons/bs"
-import {PiTelevisionLight} from "react-icons/pi"
-import {PiAirplaneInFlightThin} from "react-icons/pi"
+import {BsPhone} from 'react-icons/bs'
+import {PiTelevisionLight} from 'react-icons/pi'
+import {IoWifiOutline} from 'react-icons/io5'
+import {HiOutlineRadio, HiOutlineSquares2X2} from 'react-icons/hi2'
+import {LiaMoneyBillWaveAltSolid} from 'react-icons/lia'
 
 const Subscription = () => {
   return (
-    <section className="about-area ptb-100">
-      {/* <AirtimeModal /> */}
-            <div className="container">
+    <section className="about-area ptb-100" id='subscriptions'>
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-6">
             <div className="single-about-box">
-              <div className="icon"><BsPhoneFlip size={30}/></div>
-              <h3>Airtime Recharge</h3>
+              <div className="icon"><BsPhone size={30}/></div>
+              <h3>Airtime Purchase</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -26,52 +28,77 @@ const Subscription = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="single-about-box">
-              <div className="icon"><PiAirplaneInFlightThin size={30} /></div>
-              <h3>Flight Ticket</h3>
+              <div className="icon"><IoWifiOutline size={30}/></div>
+              <h3>Data Purchase</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <div className="btn-box">
+              <span type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle5">
+                Buy Now
+              </span>
+              </div>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="single-about-box">
               <div className="icon"><PiTelevisionLight size={30}/></div>
-              <h3>Cable Television</h3>
+              <h3>CableTV Subscriptions</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <div className="btn-box">
+              <span type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle5">
+                Buy Now
+              </span>
+              </div>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="single-about-box">
-              <div className="icon"><BsPhoneFlip size={30}/></div>
-              <h3>Airtime Recharge</h3>
+              <div className="icon"><HiOutlineRadio size={30}/></div>
+              <h3>Electricity Purchase</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <div className="btn-box">
+              <span type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle5">
+                Buy Now
+              </span>
+              </div>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="single-about-box">
-              <div className="icon"><PiAirplaneInFlightThin size={30} /></div>
-              <h3>Flight Ticket</h3>
+              <div className="icon"><LiaMoneyBillWaveAltSolid size={30}/></div>
+              <h3>Airtime to Cash</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <div className="btn-box">
+              <span type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle5">
+                Buy Now
+              </span>
+              </div>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="single-about-box">
-              <div className="icon"><PiTelevisionLight size={30}/></div>
-              <h3>Cable Television</h3>
+              <div className="icon"><HiOutlineSquares2X2 size={30}/></div>
+              <h3>Other Bills Payments</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <div className="btn-box">
+              <span type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle5">
+                Other Subscription
+              </span>
+              </div>
             </div>
           </div>
         </div>
