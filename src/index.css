@@ -1376,9 +1376,9 @@ select:disabled {
 [type="button"],
 [type="reset"],
 [type="submit"],
-button {
+/* button {
   -webkit-appearance: button;
-}
+} */
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
@@ -1428,7 +1428,7 @@ legend + * {
 }
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  /* -webkit-appearance: textfield; */
 }
 ::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -1442,7 +1442,7 @@ legend + * {
 }
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  /* -webkit-appearance: button; */
 }
 output {
   display: inline-block;
@@ -3168,7 +3168,7 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  /* color-adjust: exact; */
   print-color-adjust: exact;
 }
 .form-check-input[type="checkbox"] {
@@ -20188,10 +20188,10 @@ fieldset:disabled .btn {
 :root {
   --fa-style-family-classic: "Font Awesome 6 Free";
   --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
-}  src: url(https://genial-react.envytheme.com/fonts/fa-brands-400.woff2)
-format("woff2"),
+}
+/* format("woff2"),
 url(https://genial-react.envytheme.com/fonts/fa-brands-400.ttf)
-format("truetype");
+format("truetype"); */
 @font-face {
   font-family: Font Awesome\6 Free;
   font-style: normal;
@@ -20599,7 +20599,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   }
 }
 .swiper-virtual .swiper-slide {
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
   transform: translateZ(0);
 }
 .swiper-virtual.swiper-css-mode .swiper-wrapper:after {
@@ -20863,7 +20863,7 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
   border-radius: var(--swiper-scrollbar-border-radius, 10px);
   position: relative;
-  -ms-touch-action: none;
+  /* -ms-touch-action: none; */
   background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, 0.1));
 }
 .swiper-scrollbar-disabled > .swiper-scrollbar,

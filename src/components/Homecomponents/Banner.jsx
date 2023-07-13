@@ -11,12 +11,10 @@ const Banner = () => {
                 <div className="col-lg-6 col-md-12">
                   <div className="app-banner-content">
                     <h1>
-                      Ultimate Platform to Monitor Your Best Workflow.
+                      Welcome to Bills9ja
                     </h1>
                     <p>
-                      It should be noted that although application software is
-                      thought of as a program, it can be anything that runs on a
-                      computer.
+                    Discover the Future of Bill Payments with Bills9ja - Your All-In-One Services for Managing Your Bills
                     </p>
                     <div className="btn-box">
                       <a className="btn btn-primary" href="index.html#">Get Started</a>
