@@ -2,6 +2,7 @@ import React from 'react'
 import {BsPhoneFlip} from "react-icons/bs"
 import { Link } from 'react-router-dom'
 import styles from "../../../../../styles/Modals.module.css"
+import {HiOutlineArrowLongLeft} from "react-icons/hi2"
 
 const AirtimeModal = () => {
   return (
@@ -61,6 +62,9 @@ const AirtimeModal = () => {
         <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
             <div className="modal-header">
+                <span className='me-2' type="submit" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">
+                    <HiOutlineArrowLongLeft size={20}/>
+                </span>
                 <h1 className="modal-title fs-5" id="exampleModalToggleLabel6">Transaction Verification</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -98,12 +102,12 @@ const AirtimeModal = () => {
                                             </tr>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Status: </td>
-                                            <td>Pending Status</td>
+                                            <td>Pending Payment</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                     <button type="submit" className="w-100 btn btn-primary" data-bs-dismiss='modal'>
-                                        Proceed
+                                        Buy Now
                                     </button>
                                 </form>
                             </div>
