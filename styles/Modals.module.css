@@ -1,0 +1,18 @@
+.details{
+}
+
+.details_text{
+    line-height: 2rem;
+}
+
+.details_text_bold{
+    font-weight: 600;
+}
+
+/* show and hide password icon styles */
+.showpassword{
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    cursor: pointer;
+}

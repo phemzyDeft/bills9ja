@@ -10,7 +10,7 @@ const ForgotpasswordModal = () => {
           <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div className="modal-body">
-          <section className="login-area">
+          <section className=".login-area">
             <div className="d-table">
               <div className="d-table-cell">
                 <div className="login-form">
@@ -27,7 +27,7 @@ const ForgotpasswordModal = () => {
                       </label>
                       <input type="password" className="form-control" placeholder="Password" />
                     </div>
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-primary w-100">
                       Proceed
                     </button>
                   </form>

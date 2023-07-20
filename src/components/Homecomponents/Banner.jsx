@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
   return (
@@ -17,7 +18,7 @@ const Banner = () => {
                     Discover the Future of Bill Payments with Bills9ja - Your All-In-One Services for Managing Your Bills
                     </p>
                     <div className="btn-box">
-                      <a className="btn btn-primary" href="index.html#">Get Started</a>
+                      <Link to="/" className="btn btn-primary">Get Started</Link>
                     </div>
                   </div>
                 </div>

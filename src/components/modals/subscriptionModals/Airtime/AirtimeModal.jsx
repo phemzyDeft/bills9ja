@@ -1,6 +1,7 @@
 import React from 'react'
 import {BsPhoneFlip} from "react-icons/bs"
 import { Link } from 'react-router-dom'
+import styles from "../../../../../styles/Modals.module.css"
 
 const AirtimeModal = () => {
   return (
@@ -13,7 +14,7 @@ const AirtimeModal = () => {
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-                <section className="login-area">
+                <section className=".login-area">
                     <div className="d-table">
                         <div className="d-table-cell">
                             <div className="login-form">
@@ -22,24 +23,20 @@ const AirtimeModal = () => {
                                         <label htmlFor="phone_number">
                                             Phone Number
                                         </label>
-                                        <input type="number" id="phone_number" maxLength="11" required className="form-control" placeholder="Enter Phone Number" />
+                                        <input type="text" id="phone_number" maxLength={11} pattern='[0-9]{11}' required className="form-control" placeholder="Enter Phone Number" />
                                     </div>
                                     <div class="network d-flex justify-content-between">
                                         <div class="form-check form-check-inline">
                                             <input class="mtn form-check-input" type="radio" name="inlineRadioOptions" id="mtn" value="mtn" />
-                                            {/* <label class="form-check-label" for="inlineRadio1">1</label> */}
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <input class="airtel form-check-input" type="radio" name="inlineRadioOptions" id="airtel" value="airtel" />
-                                            {/* <label class="form-check-label" for="inlineRadio2">2</label> */}
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <input class="glo form-check-input" type="radio" name="inlineRadioOptions" id="glo" value="glo" />
-                                            {/* <label class="form-check-label" for="inlineRadio3">3</label> --> */}
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <input class="_9mobile form-check-input" type="radio" name="inlineRadioOptions" id="_9mobile" value="9Mobile" />
-                                            {/* <label class="form-check-label" for="inlineRadio4">4</label> */}
                                         </div>
                                     </div>
                                     <div className="form-group">
@@ -48,7 +45,7 @@ const AirtimeModal = () => {
                                         </label>
                                         <input type="number" id="amount" required className="form-control" placeholder="Enter amount to recharge" />
                                     </div>
-                                    <button type="submit" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" className="btn btn-primary">
+                                    <button type="submit" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" className="btn btn-primary w-100">
                                         Proceed
                                     </button>
                                 </form>
@@ -64,17 +61,48 @@ const AirtimeModal = () => {
         <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
             <div className="modal-header">
-                <h1 className="modal-title fs-5" id="exampleModalToggleLabel6">Modal 2</h1>
+                <h1 className="modal-title fs-5" id="exampleModalToggleLabel6">Transaction Verification</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-                <section className="login-area">
+                <section className=".login-area">
                     <div className="d-table">
                         <div className="d-table-cell">
                             <div className="login-form">
                                 <form>
-                                    Confirm to Proceed Modal
-                                    <button type="submit" className="btn btn-primary">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>Transaction Type:</td>
+                                            <td>Data Purchase</td>
+                                            </tr>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>Network: </td>
+                                            <td>MTN</td>
+                                            </tr>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>Plan: </td>
+                                            <td>5GB-SME-30DAYS</td>
+                                            </tr>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>Phone: </td>
+                                            <td>08123456789</td>
+                                            </tr>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>Price: </td>
+                                            <td>1,000.00</td>
+                                            </tr>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>TransactionID: </td>
+                                            <td>197741084724618429</td>
+                                            </tr>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>Status: </td>
+                                            <td>Pending Status</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button type="submit" className="w-100 btn btn-primary" data-bs-dismiss='modal'>
                                         Proceed
                                     </button>
                                 </form>
