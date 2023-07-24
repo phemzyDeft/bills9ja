@@ -73,7 +73,7 @@ const ElectricityModal = () => {
         <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
             <div className="modal-header">
-                <span className='me-2' type="submit" data-bs-target="#electricityModalToggle2" data-bs-toggle="modal">
+                <span className='me-2' type="submit" data-bs-target="#electricityModalToggle1" data-bs-toggle="modal">
                     <HiOutlineArrowLongLeft size={20}/>
                 </span>
                 <h1 className="modal-title fs-5" id="dataModalToggleLabel2">Transaction Verification</h1>
