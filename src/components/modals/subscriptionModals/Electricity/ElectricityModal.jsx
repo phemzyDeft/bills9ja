@@ -89,19 +89,15 @@ const ElectricityModal = () => {
                                         <tbody>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Transaction Type:</td>
-                                            <td>Data Purchase</td>
-                                            </tr>
-                                            <tr className={`${styles.details_text}`}>
-                                            <td className={`${styles.details_text_bold}`}>Network: </td>
-                                            <td>MTN</td>
-                                            </tr>
-                                            <tr className={`${styles.details_text}`}>
-                                            <td className={`${styles.details_text_bold}`}>Plan: </td>
-                                            <td>5GB-SME-30DAYS</td>
+                                            <td>Electricity Purchase</td>
                                             </tr>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Phone: </td>
                                             <td>08123456789</td>
+                                            </tr>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>Meter Number: </td>
+                                            <td>239863456789</td>
                                             </tr>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Price: </td>
