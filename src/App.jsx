@@ -25,6 +25,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />}/>
         <Route exact path='/dashboard' element={<Dashboard />}/>
+        <Route exact path='*' element={<Home />}/>
       </Routes>
       }
     </>

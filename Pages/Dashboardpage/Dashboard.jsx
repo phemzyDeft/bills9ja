@@ -1,11 +1,8 @@
 import React from 'react'
-import styles from '../../styles/Dashboard.module.css'
 
 const Dashboard = () => {
   return (
-    <div className={styles.footer}>
-      dashboard
-    </div>
+    <div>Dashboard page coming soon</div>
   )
 }
 

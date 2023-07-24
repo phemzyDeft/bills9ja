@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 import styles from "../../../../../styles/Modals.module.css"
 import {HiOutlineArrowLongLeft} from "react-icons/hi2"
 
-const AirtimeModal = () => {
+const DataModal = () => {
   return (
     <div>
-        <div className="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabIndex="-1">
+        <div className="modal fade" id="dataModalToggle1" aria-hidden="true" aria-labelledby="dataModalToggleLabel1" tabIndex="-1">
         <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
             <div className="modal-header">
-                <h1 className="modal-title fs-5" id="exampleModalToggleLabel5">Buy Airtime</h1>
+                <h1 className="modal-title fs-5" id="dataModalToggleLabel1">Buy Data</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
@@ -42,11 +42,19 @@ const AirtimeModal = () => {
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="amount">
-                                            Amount
+                                            Plan
                                         </label>
-                                        <input type="number" id="amount" required className="form-control" placeholder="Enter amount to recharge" />
+                                        <select class="form-select form-control" aria-label="Default select example">
+                                            <option selected>Select Plan</option>
+                                            <option value="1">500mb (Sme) - 30days #118</option>
+                                            <option value="2">1gb (Sme) - 30days #222</option>
+                                            <option value="3">2gb (Sme) - 30days #444</option>
+                                            <option value="4">3gb (Sme) - 30days #666</option>
+                                            <option value="5">5gb (Sme) - 30days #1,110</option>
+                                            <option value="6">10gb (Sme) - 30days #2,220</option>
+                                        </select>
                                     </div>
-                                    <button type="submit" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" className="btn btn-primary w-100">
+                                    <button type="submit" data-bs-target="#dataModalToggle2" data-bs-toggle="modal" className="btn btn-primary w-100">
                                         Proceed
                                     </button>
                                 </form>
@@ -58,14 +66,14 @@ const AirtimeModal = () => {
             </div>
         </div>
         </div>
-        <div className="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel6" tabIndex="-1">
+        <div className="modal fade" id="dataModalToggle2" aria-hidden="true" aria-labelledby="dataModalToggleLabel2" tabIndex="-1">
         <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
             <div className="modal-header">
-                <span className='me-2' type="submit" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">
+                <span className='me-2' type="submit" data-bs-target="#dataModalToggle1" data-bs-toggle="modal">
                     <HiOutlineArrowLongLeft size={20}/>
                 </span>
-                <h1 className="modal-title fs-5" id="exampleModalToggleLabel6">Transaction Verification</h1>
+                <h1 className="modal-title fs-5" id="dataModalToggleLabel2">Transaction Verification</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
@@ -78,11 +86,15 @@ const AirtimeModal = () => {
                                         <tbody>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Transaction Type:</td>
-                                            <td>Airtime Purchase</td>
+                                            <td>Data Purchase</td>
                                             </tr>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Network: </td>
                                             <td>MTN</td>
+                                            </tr>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>Plan: </td>
+                                            <td>5GB-SME-30DAYS</td>
                                             </tr>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Phone: </td>
@@ -118,4 +130,4 @@ const AirtimeModal = () => {
   )
 }
 
-export default AirtimeModal
+export default DataModal

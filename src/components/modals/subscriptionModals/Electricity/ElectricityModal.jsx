@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 import styles from "../../../../../styles/Modals.module.css"
 import {HiOutlineArrowLongLeft} from "react-icons/hi2"
 
-const AirtimeModal = () => {
+const ElectricityModal = () => {
   return (
     <div>
-        <div className="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabIndex="-1">
+        <div className="modal fade" id="electricityModalToggle1" aria-hidden="true" aria-labelledby="electricityModalToggleLabel1" tabIndex="-1">
         <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
             <div className="modal-header">
-                <h1 className="modal-title fs-5" id="exampleModalToggleLabel5">Buy Airtime</h1>
+                <h1 className="modal-title fs-5" id="electricityModalToggleLabel1">Buy Data</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
@@ -20,33 +20,44 @@ const AirtimeModal = () => {
                         <div className="d-table-cell">
                             <div className="login-form">
                                 <form>
-                                    <div className="form-group">
-                                        <label htmlFor="phone_number">
-                                            Phone Number
-                                        </label>
-                                        <input type="text" id="phone_number" maxLength={11} pattern='[0-9]{11}' required className="form-control" placeholder="Enter Phone Number" />
-                                    </div>
-                                    <div class="network d-flex justify-content-between">
-                                        <div class="form-check form-check-inline">
-                                            <input class="mtn form-check-input" type="radio" name="inlineRadioOptions" id="mtn" value="mtn" />
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="airtel form-check-input" type="radio" name="inlineRadioOptions" id="airtel" value="airtel" />
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="glo form-check-input" type="radio" name="inlineRadioOptions" id="glo" value="glo" />
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="_9mobile form-check-input" type="radio" name="inlineRadioOptions" id="_9mobile" value="9Mobile" />
-                                        </div>
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="amount">
-                                            Amount
-                                        </label>
-                                        <input type="number" id="amount" required className="form-control" placeholder="Enter amount to recharge" />
-                                    </div>
-                                    <button type="submit" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" className="btn btn-primary w-100">
+                                <div className="form-group">
+                                    <label htmlFor="amount">
+                                        Electricity Company
+                                    </label>
+                                    <select class="form-select form-control" aria-label="Default select example">
+                                        <option selected>Select Company</option>
+                                        <option value="1">Abuja Electricity Distribution Company - Aedc</option>
+                                        <option value="2">Eko Electric Payment - Ekedc</option>
+                                        <option value="3">Ikeja Electric Payment - Ikedc</option>
+                                        <option value="4">Jos Electric - Jed</option>
+                                        <option value="5">Kaduna Electric - Kaedco</option>
+                                        <option value="6">Kano Electric - Kedco</option>
+                                        <option value="7">Port Harcourt Electric - Phed</option>
+                                        <option value="8">Ibadan Electricity Distribution Company - Ibedec</option>
+                                    </select>
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="amount">
+                                        Meter Type
+                                    </label>
+                                    <select class="form-select form-control" aria-label="Default select example">
+                                        <option selected>Prepaid</option>
+                                        <option value="1">Postpaid</option>
+                                    </select>
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="phone_number">
+                                        Meter Number
+                                    </label>
+                                    <input type="text" id="meter_number" pattern='[0-9]{11}' required className="form-control" placeholder="Enter Meter Number" />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="phone_number">
+                                        Phone Number
+                                    </label>
+                                    <input type="text" id="phone_number" maxLength={11} pattern='[0-9]{11}' required className="form-control" placeholder="Enter Phone Number" />
+                                </div>
+                                    <button type="submit" data-bs-target="#electricityModalToggle2" data-bs-toggle="modal" className="btn btn-primary w-100">
                                         Proceed
                                     </button>
                                 </form>
@@ -58,14 +69,14 @@ const AirtimeModal = () => {
             </div>
         </div>
         </div>
-        <div className="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel6" tabIndex="-1">
+        <div className="modal fade" id="electricityModalToggle2" aria-hidden="true" aria-labelledby="electricityModalToggleLabel2" tabIndex="-1">
         <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
             <div className="modal-header">
-                <span className='me-2' type="submit" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">
+                <span className='me-2' type="submit" data-bs-target="#electricityModalToggle2" data-bs-toggle="modal">
                     <HiOutlineArrowLongLeft size={20}/>
                 </span>
-                <h1 className="modal-title fs-5" id="exampleModalToggleLabel6">Transaction Verification</h1>
+                <h1 className="modal-title fs-5" id="dataModalToggleLabel2">Transaction Verification</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
@@ -78,11 +89,15 @@ const AirtimeModal = () => {
                                         <tbody>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Transaction Type:</td>
-                                            <td>Airtime Purchase</td>
+                                            <td>Data Purchase</td>
                                             </tr>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Network: </td>
                                             <td>MTN</td>
+                                            </tr>
+                                            <tr className={`${styles.details_text}`}>
+                                            <td className={`${styles.details_text_bold}`}>Plan: </td>
+                                            <td>5GB-SME-30DAYS</td>
                                             </tr>
                                             <tr className={`${styles.details_text}`}>
                                             <td className={`${styles.details_text_bold}`}>Phone: </td>
@@ -118,4 +133,4 @@ const AirtimeModal = () => {
   )
 }
 
-export default AirtimeModal
+export default ElectricityModal

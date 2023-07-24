@@ -1,0 +1,11 @@
+/* .mobileView{
+    display: flex;
+} */
+
+@media only screen and (max-width: 600px) {
+    .mobileView{
+        border-radius: 20px;
+        background: white;
+        line-height: 3rem;
+    }
+}
