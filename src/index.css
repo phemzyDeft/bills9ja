@@ -1104,6 +1104,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 }
 body {
@@ -1117,6 +1118,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 hr {
   margin: 1rem 0;
