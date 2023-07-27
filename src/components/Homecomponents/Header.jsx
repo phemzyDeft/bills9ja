@@ -3,6 +3,7 @@ import styles from "../../../styles/Mobile.module.css"
 import { useState } from 'react';
 import { IoIosMenu } from 'react-icons/io';
 import { LiaTimesSolid } from 'react-icons/lia';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -75,6 +76,19 @@ const Header = () => {
                 Faq
                 </span>
               </a>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/dashboard">
+                <span
+                  onClick={()=>handleToggle()}
+                  data-bs-toggle={"collapse"}
+                  data-bs-target={"#navbarSupportedContent"}
+                  aria-controls={"navbarSupportedContent"}
+                  aria-expanded={toggle ? 'true' : 'false'}
+                  >
+                  Dashboard
+                </span>
+              </Link>
             </li>
           </ul>
           <ul className=".others-option">

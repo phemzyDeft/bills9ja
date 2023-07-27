@@ -95,7 +95,7 @@ const Subscription = () => {
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <div className="btn-box">
-              <span type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle5">
+              <span type="button" className="btn btn-primary">
                 Other Subscription
               </span>
               </div>
